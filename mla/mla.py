@@ -3,6 +3,11 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 st.title('Multiple language abstracts')
+with st.sidebar:
+    st.write('[Home](http://jorgeprodriguezg.github.io)')
+    st.write('[Multiple language abstracts](https://jorgeprodriguezg-jorgeprodriguezg-github-io-mlamla-mq0osn.streamlitapp.com/)')
+    st.write('[Data and code](http://jorgeprodriguezg.github.io/data_and_code.html)')
+    st.write('[CV](https://jorgeprodriguezg.github.io/CV_May22.pdf)')
 lans = ['English','Español','中文']
 language = st.selectbox('Please select your language',lans)
 
@@ -10,6 +15,10 @@ L = lans.index(language)
 if L == 0:
     st.write('Available abstracts in English')
 
+    with st.expander("Comprehensive analytical approaches reveal species specific search strategies in sympatric apex predatory sharks"):
+        st.write("Animals follow specific movement patterns and search strategies to maximize encounters with essential resources (e.g. prey, favourable habitat) while minimizing exposures to suboptimal conditions (e.g. competitors, predators). While describing spatiotemporal patterns in animal movement from tracking data is common, understanding the associated search strategies employed continues to be a key challenge in ecology. Moreover, studies in marine ecology commonly focus on singular aspects of species’ movements, however using multiple analytical approaches can further enable researchers to identify ecological phenomena and resolve fundamental ecological questions relating to movement. Here, we used a set of statistical physics-based methods to analyze satellite tracking data from three co-occurring apex predators (tiger, great hammerhead and bull sharks) that predominantly inhabit productive coastal regions of the northwest Atlantic Ocean and Gulf of Mexico. We analyzed data from 96 sharks and calculated a range of metrics, including each species’ displacements, turning angles, dispersion, space-use and community-wide movement patterns to characterize each species' movements and identify potential search strategies. Our comprehensive approach revealed high interspecific variability in shark movement patterns and search strategies. Tiger sharks displayed near-random movements consistent with a Brownian strategy commonly associated with movements through resource-rich habitats. Great hammerheads showed a mixed-movement strategy including Brownian and resident-type movements, suggesting adaptation to widespread and localized high resource availability. Bull sharks followed a resident movement strategy with restricted movements indicating localized high resource availability. We hypothesize that the species-specific search strategies identified here may help foster the co-existence of these sympatric apex predators. Following this comprehensive approach provided novel insights into spatial ecology and assisted with identifying unique movement and search strategies. Similar future studies of animal movement will help characterize movement patterns and also enable the identification of search strategies to help elucidate the ecological drivers of movement and to understand species’ responses to environmental change.")
+        st.write("[More](https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.05953)")
+        
     with st.expander("The global network of ports supporting high seas fishing"):
         st.write("Fisheries in waters beyond national jurisdiction (“high seas”) are difficult to monitor and manage. Their regulation for sustainability requires critical information on how fishing effort is distributed across fishing and landing areas, including possible border effects at the exclusive economic zone (EEZ) limits. We infer the global network linking harbors supporting fishing vessels to fishing areas in high seas from automatic identification system tracking data in 2014, observing a modular structure, with vessels departing from a given harbor fishing mostly in a single province. The top 16% of these harbors support 84% of fishing effort in high seas, with harbors in low- and middle-income countries ranked among the top supporters. Fishing effort concentrates along narrow strips attached to the boundaries of EEZs with productive fisheries, identifying a free-riding behavior that jeopardizes efforts by nations to sustainably manage their fisheries, perpetuating the tragedy of the commons affecting global fishery resources.")
         st.write("[More](https://www.science.org/doi/10.1126/sciadv.abe3470)")
@@ -98,5 +107,6 @@ if L == 1:
 
 if L == 2:
     st.write('Available abstracts in Chinese Mandarin')
-    st.subheader("[Big data analyses reveal patterns and drivers of the movements of southern elephant seals](https://www.nature.com/articles/s41598-017-00165-0)")
-    st.write("追蹤動物在資料庫中的數據成長提供了一個機會，用於分析群體遷移模式甚至能用於整個物種。我們使用分析法開發處理\"大數據\"，不需要對目標代理的行為假設進行\"a priori\"；分析南大洋272隻海豹 (Mirounga leonina)匯總追蹤數據，此數據集是由十多年來超過500,000個位置估計值組成。我們的分析上顯示，這些海豹的移動是透過幾個空間和時間尺度上的截斷冪律分佈來描述的，具有明確的方向移動特徵。這個模式是個證據，當分析聚合軌跡時儘管個體的軌跡多種多樣。我們還確認了海洋區域，描述這些海豹遷徙和覓食棲息地。我們的分析為移動的內在驅動因素（例如記憶）的存在提供了證據，這是使用常見的移動行為模型無法檢測到的。這些結果凸顯了“大數據”技術在應用於大型動物追蹤數據集時為移動行為提供新見解的潛在性。")
+    with st.expander("Big data analyses reveal patterns and drivers of the movements of southern elephant seals"):
+        st.write("追蹤動物在資料庫中的數據成長提供了一個機會，用於分析群體遷移模式甚至能用於整個物種。我們使用分析法開發處理\"大數據\"，不需要對目標代理的行為假設進行\"a priori\"；分析南大洋272隻海豹 (Mirounga leonina)匯總追蹤數據，此數據集是由十多年來超過500,000個位置估計值組成。我們的分析上顯示，這些海豹的移動是透過幾個空間和時間尺度上的截斷冪律分佈來描述的，具有明確的方向移動特徵。這個模式是個證據，當分析聚合軌跡時儘管個體的軌跡多種多樣。我們還確認了海洋區域，描述這些海豹遷徙和覓食棲息地。我們的分析為移動的內在驅動因素（例如記憶）的存在提供了證據，這是使用常見的移動行為模型無法檢測到的。這些結果凸顯了“大數據”技術在應用於大型動物追蹤數據集時為移動行為提供新見解的潛在性。")
+        st.write("[More](https://www.nature.com/articles/s41598-017-00165-0)")
