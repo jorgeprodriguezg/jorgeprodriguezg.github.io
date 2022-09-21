@@ -5,7 +5,8 @@ from PIL import Image
 st.title('Multiple language abstracts')
 with st.sidebar:
     st.subheader('Jorge P. Rodríguez, PhD') 
-    image = Image.open('./pic.jpeg')
+    image = Image.open('./pic.jpeg',"rb")
+    st.write('pass')
     st.image(image,width=200)
     st.write('[Home](http://jorgeprodriguezg.github.io)')
     st.write('[Multiple language abstracts](https://jorgeprodriguezg-jorgeprodriguezg-github-io-mlamla-mq0osn.streamlitapp.com/)')
