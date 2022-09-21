@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 st.title('Multiple language abstracts')
 with st.sidebar:
-    st.subheader('Jorge P. Rodríguez, PhD') 
+    st.subheader('Jorge P. Rodríguez, PhD')
 #     image = Image.open('./pic.jpeg',"rb")
 #     st.write('pass')
 #     st.image(image,width=200)
