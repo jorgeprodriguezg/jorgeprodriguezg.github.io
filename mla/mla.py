@@ -6,7 +6,7 @@ st.title('Multiple language abstracts')
 with st.sidebar:
     st.subheader('Jorge P. Rodríguez, PhD') 
 #     image = Image.open('./resources/pic.jpeg')
-    st.image(image,width=200)
+#     st.image(image,width=200)
     st.write('[Home](http://jorgeprodriguezg.github.io)')
     st.write('[Multiple language abstracts](https://jorgeprodriguezg-jorgeprodriguezg-github-io-mlamla-mq0osn.streamlitapp.com/)')
     st.write('[Data and code](http://jorgeprodriguezg.github.io/data_and_code.html)')
